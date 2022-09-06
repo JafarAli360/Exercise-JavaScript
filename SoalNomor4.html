@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jawaban Nomor 4</title>
+  </head>
+  <body>
+    <script>
+      function jumlahDigit(angka) {
+        const One = (angka / 1000) % 10;
+        const two = (angka / 100) % 10;
+        const three = (angka / 10) % 10;
+        const four = angka % 10;
+
+        const hitungDigit = One + two + three + four;
+        return Math.floor(hitungDigit);
+      }
+
+      document.writeln("<h2>" + "Klik kanan 'inspect', pilih console" + "</h2>");
+
+      console.log(jumlahDigit(2022));
+      console.log(jumlahDigit(1111));
+    </script>
+  </body>
+</html>

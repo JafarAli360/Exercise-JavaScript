@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jawaban Nomor 2</title>
+  </head>
+  <body>
+    <script>
+      function nilaiUjian(nilai) {
+        if (nilai > 90 && nilai <= 100) {
+          hasil = "A";
+        } else if (nilai > 81 && nilai <= 90) {
+          hasil = "B";
+        } else if (nilai > 71 && nilai <= 80) {
+          hasil = "C";
+        } else if (nilai > 61 && nilai <= 70) {
+          hasil = "D";
+        } else if (nilai <= 60) {
+          hasil = "E";
+        } else {
+          hasil = "Isien Woy!";
+        }
+        return hasil;
+      }
+
+      document.writeln("<h2>" + "Klik kanan 'inspect', pilih console" + "</h2>");
+
+      console.log(nilaiUjian(90));
+      console.log(nilaiUjian(76));
+    </script>
+  </body>
+</html>

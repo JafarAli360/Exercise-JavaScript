@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jawaban Nomor 5</title>
+  </head>
+  <body>
+    <script>
+      function string(str) {
+        const satu = str.indexOf("a");
+        const dua = str.indexOf("b");
+        const total = Math.abs(satu - dua);
+        if (total > 4) {
+          return "YES";
+        } else {
+          return "NO";
+        }
+      }
+
+      document.writeln("<h2>" + "Klik kanan 'inspect', pilih console" + "</h2>");
+
+      console.log(string("acdebae"));
+      console.log(string("cdaecba"));
+    </script>
+  </body>
+</html>

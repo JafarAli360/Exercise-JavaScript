@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jawaban Nomor 1</title>
+  </head>
+  <body>
+    <script>
+      function rekening(tarikUang, jumlahUang) {
+        if (tarikUang % 5 == 0 && jumlahUang > tarikUang) {
+          return `Uang yang ada tarik adalah : ${jumlahUang - tarikUang - 0.5}`;
+        } else {
+          return `jumlah saldo rekening anda tidak cukup, saldo anda ${jumlahUang}`;
+        }
+      }
+
+      document.writeln("<h2>" + "Klik kanan 'inspect', pilih console" + "</h2>");
+
+      console.log(rekening(20, 30));
+    </script>
+  </body>
+</html>
